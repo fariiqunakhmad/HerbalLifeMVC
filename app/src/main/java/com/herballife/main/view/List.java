@@ -1,4 +1,4 @@
-package com.herballife.main;
+package com.herballife.main.view;
 
 import java.util.ArrayList;
 
@@ -16,6 +16,10 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
+
+import com.herballife.main.controller.Detail;
+import com.herballife.main.R;
+import com.herballife.main.util.SQLiteDBHelper;
 
 public class List extends Activity  implements OnClickListener
 {

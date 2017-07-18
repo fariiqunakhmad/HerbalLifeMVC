@@ -1,11 +1,8 @@
-package com.herballife.main;
+package com.herballife.main.view;
 
 import android.app.Activity;
 
 import android.content.Intent;
-import android.database.Cursor;
-import android.database.SQLException;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -15,8 +12,10 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.TextView;
-import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
+
+import com.herballife.main.controller.Detail;
+import com.herballife.main.R;
 
 
 public class Cari_Penyakit  extends Activity implements TextWatcher , OnClickListener{

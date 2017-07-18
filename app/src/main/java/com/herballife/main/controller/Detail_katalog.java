@@ -1,4 +1,4 @@
-package com.herballife.main;
+package com.herballife.main.controller;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,6 +11,9 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.herballife.main.R;
+import com.herballife.main.util.SQLiteDBHelper;
 
 public class Detail_katalog extends Activity
 {

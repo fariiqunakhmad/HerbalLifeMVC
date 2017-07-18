@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Splashscreen"
+            android:name=".view.Splashscreen"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.herballife.main.MainActivity"
+            android:name="com.herballife.main.controller.MainActivity"
             android:label="@string/app_name" >
         </activity>
         <activity
@@ -32,7 +32,12 @@
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name="com.herballife.main.List_catalog"
+            android:name="com.herballife.main.controller.List_catalog"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.herballife.main.view.MVCView"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
         </activity>
@@ -52,22 +57,22 @@
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name="com.herballife.main.List"
+            android:name="com.herballife.main.view.List"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name="com.herballife.main.Detail"
+            android:name="com.herballife.main.controller.Detail"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name="com.herballife.main.Detail_katalog"
+            android:name="com.herballife.main.controller.Detail_katalog"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name="com.herballife.main.Cari_Penyakit"
+            android:name="com.herballife.main.view.Cari_Penyakit"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
         </activity>
