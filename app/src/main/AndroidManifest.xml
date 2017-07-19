@@ -27,7 +27,7 @@
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="com.herballife.main.Search"
+            android:name="com.herballife.main.view.PenyakitView"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
         </activity>

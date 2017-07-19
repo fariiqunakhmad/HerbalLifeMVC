@@ -13,6 +13,7 @@ import android.view.View.OnClickListener;
 import com.herballife.main.R;
 import com.herballife.main.view.List;
 import com.herballife.main.view.KatalogView;
+import com.herballife.main.view.PenyakitView;
 
 public class MainActivity extends Activity implements OnClickListener
 {
@@ -41,7 +42,7 @@ public class MainActivity extends Activity implements OnClickListener
 		{
 		
 		case R.id.btn_search: 
-		Intent btn_search = new Intent(this, List.class );
+		Intent btn_search = new Intent(this, PenyakitView.class );
 		startActivity(btn_search); 
 		break; 
 		case R.id.btn_catalog: 

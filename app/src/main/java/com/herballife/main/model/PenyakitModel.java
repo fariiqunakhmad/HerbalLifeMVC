@@ -15,7 +15,7 @@ public final class PenyakitModel {
     private static final String TABLE_NAME = "data_penyakit";
     private static final int DB_VERSION = 1;
     private static final String DB_CREATE_QUERY = "CREATE TABLE " +
-            PenyakitModel.TABLE_NAME + " (id integer primary key autoincrement nama text not null);";
+            PenyakitModel.TABLE_NAME + " (id integer primary key autoincrement Nama text not null);";
 
     private final SQLiteDatabase database;
 
@@ -50,13 +50,13 @@ public final class PenyakitModel {
 
     public Cursor loadAllPenyakit() {
         final Cursor c = this.database.query(PenyakitModel.TABLE_NAME,
-                new String[]{"nama"}, null, null, null, null, null);
+                new String[]{"Nama"}, null, null, null, null, null);
 
         return c;
     }
     public Cursor loadOnePenyakit(String nama) {
         final Cursor c = this.database.query(PenyakitModel.TABLE_NAME,
-                new String[]{"*"}, "nama = '"+nama+"'", null, null, null, null);
+                new String[]{"*"}, "Nama = '"+nama+"'", null, null, null, null);
 
         return c;
     }

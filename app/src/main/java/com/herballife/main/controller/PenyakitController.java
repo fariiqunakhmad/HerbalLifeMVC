@@ -47,7 +47,7 @@ public class PenyakitController {
 
 
         //mendapatkan data katalog dari model dan memasukannya kedalam List String
-        public List<String> getKatalogs() {
+        public List<String> getPenyakits() {
             Cursor c = model.loadAllPenyakit();
             listitem1.clear();
             if (c != null) {
@@ -61,7 +61,7 @@ public class PenyakitController {
             return listitem1;
         }
 
-        public Cursor getOneKatalogs(String nama) {
+        public Cursor getOnePenyakits(String nama) {
             Cursor c = model.loadOnePenyakit(nama);
 
             return c;
