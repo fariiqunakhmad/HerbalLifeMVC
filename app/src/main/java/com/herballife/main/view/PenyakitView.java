@@ -53,7 +53,7 @@ public class PenyakitView extends Activity implements View.OnClickListener {
                 checked = arg2;
                 String penyakit = penyakits.get(checked);
 
-                Intent tambah = new Intent(getApplicationContext(), Detail.class);
+                Intent tambah = new Intent(getApplicationContext(), DetailView.class);
                 tambah.putExtra("kirim_penyakit", penyakit);
                 startActivity(tambah);
                 //Toast.makeText(getApplicationContext(),"anda mengklick = " +listitem1.get(checked).toString(),Toast.LENGTH_SHORT).show();

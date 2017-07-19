@@ -46,7 +46,7 @@ public class Cari_Penyakit extends Activity implements TextWatcher, OnClickListe
             public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
                                     long arg3) {
                 // TODO Auto-generated method stub
-                Intent tambah = new Intent(Cari_Penyakit.this, Detail.class);
+                Intent tambah = new Intent(Cari_Penyakit.this, DetailView.class);
                 String a = edit.getText().toString();
                 tambah.putExtra("kirim_penyakit", a);
                 startActivity(tambah);

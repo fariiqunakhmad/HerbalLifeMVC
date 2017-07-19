@@ -42,7 +42,7 @@
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name="com.herballife.catalog.Adas"
+            android:name="com.herballife.main.view.DetailView"
             android:label="@string/title_activity_adas"
             android:screenOrientation="portrait" >
         </activity>
