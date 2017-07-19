@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import com.herballife.main.R;
 import com.herballife.main.util.SQLiteDBHelper;
-import com.herballife.main.view.MVCView;
+import com.herballife.main.view.KatalogView;
 
 public class Detail extends Activity  implements OnClickListener
 {
@@ -60,7 +60,7 @@ public class Detail extends Activity  implements OnClickListener
 	@Override
 	public void onClick(View arg0) {
 		// TODO Auto-generated method stub
-		Intent tombol = new Intent(this, MVCView.class);
+		Intent tombol = new Intent(this, KatalogView.class);
 		startActivity(tombol);
 	}
 }

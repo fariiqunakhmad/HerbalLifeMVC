@@ -7,21 +7,18 @@ package com.herballife.main.view;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import com.herballife.main.R;
-import com.herballife.main.controller.Detail_katalog;
 import com.herballife.main.controller.List_catalog;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MVCView extends Activity {
+public class KatalogView extends Activity {
     public static final String APP_TAG = "com.mrbool.mvc";
     public ListView list;
     int checked = -1;
@@ -43,7 +40,6 @@ public class MVCView extends Activity {
 
     private void populateKatalog() {
         final List<String> katalogs = this.controller.getKatalogs();
-        Log.d(MVCView.APP_TAG, String.format("%d found tasks ", katalogs.size()));
         //adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, listitem1);
         //list.setAdapter(adapter);
         this.list.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, katalogs.toArray(new String[]{})));

@@ -1,15 +1,12 @@
 package com.herballife.main.controller;
 
 
-import android.app.Activity;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 
-import com.herballife.main.model.MvCModel;
+import com.herballife.main.model.KatalogModel;
 import com.herballife.main.util.SQLiteDBHelper;
 
 import java.util.ArrayList;
@@ -20,11 +17,11 @@ public class List_catalog {
     SQLiteDBHelper helper;
     public static SQLiteDatabase db;
     ArrayList<String> listitem1;
-    private MvCModel model;
+    private KatalogModel model;
 
     public List_catalog(Context app_context) {
         listitem1 = new ArrayList<String>();
-        model = new MvCModel(app_context);
+        model = new KatalogModel(app_context);
     }
 
     public void addKatalog(final String title) {
@@ -61,51 +58,10 @@ public class List_catalog {
         return listitem1;
     }
 
-    /*protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.list_katalog);
-        try {
-            helper = new SQLiteDBHelper(this);
-            db = helper.getDb();
-            String sql = "select * from Katalog";
-            Cursor c = db.rawQuery(sql, null);
-            c.moveToFirst();
+    public Cursor getOneKatalogs(String nama) {
+        Cursor c = model.loadOneKatalog(nama);
 
+        return c;
+    }
 
-            int i = 0;
-            while (!c.isAfterLast()) {
-                int index = c.getColumnIndex("Nama");
-                String temp = c.getString(index);
-                listitem1.add(temp);
-
-                i++;
-                c.moveToNext();
-            }
-
-
-            list = (ListView) findViewById(R.id.list_tumbuhan);
-            adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, listitem1);
-
-            list.setAdapter(adapter);
-            list.setOnItemClickListener(new OnItemClickListener() {
-
-
-                public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-                    checked = arg2;
-                    String tumbuhan = listitem1.get(checked);
-
-                    Intent tambah = new Intent(List_catalog.this, Detail_katalog.class);
-                    tambah.putExtra("kirim_tumbuhan", tumbuhan);
-                    startActivity(tambah);
-                    //Toast.makeText(getApplicationContext(),"anda mengklick = " +listitem1.get(checked).toString(),Toast.LENGTH_SHORT).show();
-
-                }
-
-            });
-
-        } catch (SQLException e) {
-            Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG).show();
-        }
-
-    }*/
 }

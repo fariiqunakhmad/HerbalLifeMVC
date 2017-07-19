@@ -37,7 +37,7 @@
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name="com.herballife.main.view.MVCView"
+            android:name="com.herballife.main.view.KatalogView"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
         </activity>
@@ -67,7 +67,7 @@
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name="com.herballife.main.controller.Detail_katalog"
+            android:name="com.herballife.main.view.Detail_katalog"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
         </activity>

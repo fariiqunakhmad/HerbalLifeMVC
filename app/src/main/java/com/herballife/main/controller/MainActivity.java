@@ -12,7 +12,7 @@ import android.view.View.OnClickListener;
 
 import com.herballife.main.R;
 import com.herballife.main.view.List;
-import com.herballife.main.view.MVCView;
+import com.herballife.main.view.KatalogView;
 
 public class MainActivity extends Activity implements OnClickListener
 {
@@ -45,7 +45,7 @@ public class MainActivity extends Activity implements OnClickListener
 		startActivity(btn_search); 
 		break; 
 		case R.id.btn_catalog: 
-		Intent btn_catalog = new Intent(this, MVCView.class );
+		Intent btn_catalog = new Intent(this, KatalogView.class );
 		startActivity(btn_catalog);
 		break;		 
 		case R.id.btn_help:
